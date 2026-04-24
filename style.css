@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "minecraft";
-    src: url("fontes/Minecrafter.Reg.ttf") format("truetype");
+    src: url("/Minecraft-3D-project/fontes/Minecrafter.Reg.ttf");
 }
 
 body{
@@ -23,7 +23,8 @@ body{
 }
 
 h1, h2{
-    font-family: "minecraft", sans-serif !important;
+    font-family: "minecraft", sans-serif;
+    font-weight: 400;
 }
 
 section{
