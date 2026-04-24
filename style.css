@@ -23,8 +23,7 @@ body{
 }
 
 h1, h2{
-    font-family: "minecraft";
-    font-weight: 400;
+    font-family: "minecraft", sans-serif !important;
 }
 
 section{
