@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "minecraft";
+    src: url(/fontes/Minecrafter.Reg.ttf);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.divPai{ 
+    width: 100vw;
+    background-image: url(imagens/fundo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.908);
+}
+
+h1, h2{
+    font-family: "minecraft";
+    font-weight: 400;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divAbelha {
+    width: 100vw;
+    position: absolute;
+    height: 170vh;
+
+    .abelha {
+        position: sticky;
+        top: 0;
+    }
+}
+
+.sec1{
+    gap: 2.5vw;
+
+    h1{
+        font-size: 12vw;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: left;
+        -webkit-text-stroke: .3vw;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+.mensagem{
+    background-color: rgb(111, 111, 111);
+    padding: 1vw 1.2vw;
+    border: .3vw solid black;
+    font-size: 1vw;
+    box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.463) inset, -3px -3px 0px rgba(0, 0, 0, 0.266) inset;
+}
+
+.sec2{
+    align-items: end;
+    padding-right: 12vw;
+    padding-bottom: 18vw;
+
+    h2{
+        font-size: 7vw;
+        -webkit-text-stroke: .2vw;
+        -webkit-text-stroke-color: black;
+    }
+
+    h2:nth-child(1){
+        text-align: end;
+    }
+}
+
+.divSteve {
+    position: absolute;
+    top: 200vh;
+    width: 100%;
+
+    .steve {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.sec3{
+    gap: 2.5vw;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 350px;
+
+    h2{
+        font-size: 6vw;
+        -webkit-text-stroke: .2vw;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px){
+    .sec1{
+        .mensagem{
+            font-size: 2.2vh;
+            text-align: center;
+            margin: 25px;
+            margin-bottom: 10px;
+        }
+
+        h1{
+            font-size: 12vh;
+            margin: 25px;
+            margin-top: 0;
+        }
+    }
+
+    .sec2{
+        padding-right: 20px;
+
+        h2{
+            font-size: 7vh;
+        }
+    }
+
+    .sec3{
+        .mensagem{
+            font-size: 2.2vh;
+            text-align: center;
+            margin: 25px;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-size: 8vh;
+            text-align: center;
+        }
+    }
+}
+
